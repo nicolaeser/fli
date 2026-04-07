@@ -22,6 +22,7 @@ COPY --from=builder /app/fli /app/fli
 
 ENV PATH="/app/.venv/bin:$PATH"
 ENV VIRTUAL_ENV="/app/.venv"
+ENV PYTHONUNBUFFERED=1
 ENV HOST="0.0.0.0"
 ENV PORT="8000"
 
